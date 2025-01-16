@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
       return MaterialApp.router(
         title: 'Kuroyomi Manga',
         routerConfig: _appRouter.config(),
+        debugShowCheckedModeBanner: false,
         theme: ThemeData.dark(useMaterial3: true),
         locale: locale,
         localizationsDelegates: AppLocalizations.localizationsDelegates,

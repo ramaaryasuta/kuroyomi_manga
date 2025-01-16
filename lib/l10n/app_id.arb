@@ -1,5 +1,7 @@
 {
     "@@locale": "id",
     "language": "Indonesia",
-    "home": "Beranda"
+    "kuroyomiManga": "Kuroyomi Manga",
+    "home": "Beranda", 
+    "changeLanguage": "Ubah Bahasa"
 }

@@ -1,9 +1,13 @@
+import 'dart:developer';
+
 import 'package:dio/dio.dart';
 
 class DioClient {
   static const String baseUrl = 'https://wholesomelist.com/api';
 
-  final Dio dio = Dio();
+  final Dio dio;
+
+  DioClient() : dio = Dio(BaseOptions(baseUrl: baseUrl));
 
   /// handle safe api call with error handling
   Future<Response<dynamic>> safeApiCall(
@@ -22,7 +26,8 @@ class DioClient {
     required String path,
     Map<String, dynamic>? queryParameters,
   }) async {
+    log('GET: $baseUrl$path');
     return await safeApiCall(
-        () => dio.get(path, queryParameters: queryParameters));
+        () => dio.get('$baseUrl$path', queryParameters: queryParameters));
   }
 }
