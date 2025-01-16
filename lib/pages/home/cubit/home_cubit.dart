@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:kuroyomi_manga/pages/home/data/manga_repository.dart';
 
@@ -12,7 +10,6 @@ class HomeCubit extends Cubit<HomeState> {
     emit(HomeLoading());
     try {
       final response = await MangaRepository().fetchMangaList();
-      log('response: $response');
       emit(HomeLoaded(mangaList: response));
     } catch (e) {
       emit(HomeError(message: e.toString()));

@@ -7,15 +7,15 @@ class MangaModel {
   String? title;
   String? author;
   String? note;
-  // String? parody;
+  String? parody;
   String? tier;
-  // int? pages;
+  int? pages;
   // String? misc;
-  // SiteTag? siteTag;
+  SiteTag? siteTag;
   String? image;
-  // String? uuid;
-  // List<String>? tag;
-  // String? link;
+  String? uuid;
+  List<String>? tag;
+  String? link;
 
   MangaModel({
     this.id,
@@ -26,15 +26,15 @@ class MangaModel {
     this.title,
     this.author,
     this.note,
-    // this.parody,
+    this.parody,
     this.tier,
-    // this.pages,
+    this.pages,
     // this.misc,
-    // this.siteTag,
+    this.siteTag,
     this.image,
-    // this.uuid,
-    // this.tag,
-    // this.link,
+    this.uuid,
+    this.tag,
+    this.link,
   });
 
   factory MangaModel.fromJson(Map<String, dynamic> json) {
@@ -47,16 +47,16 @@ class MangaModel {
       title: json['title'],
       author: json['author'],
       note: json['note'],
-      // parody: json['parody'],
+      parody: json['parody'],
       tier: json['tier'],
-      // pages: json['pages'],
+      pages: json['pages'],
       // misc: json['misc'],
-      // siteTag:
-      //     json['siteTags'] != null ? SiteTag.fromJson(json['siteTags']) : null,
+      siteTag:
+          json['siteTags'] != null ? SiteTag.fromJson(json['siteTags']) : null,
       image: json['image'],
-      // uuid: json['uuid'],
-      // tag: json['tag'],
-      // link: json['link'],
+      uuid: json['uuid'],
+      tag: List<String>.from(json['tags'] ?? []),
+      link: json['link'],
     );
   }
 }
@@ -69,8 +69,8 @@ class SiteTag {
 
   factory SiteTag.fromJson(Map<String, dynamic> json) {
     return SiteTag(
-      tags: json['tags'],
-      characters: json['characters'],
+      tags: List<String>.from(json['tags'] ?? []),
+      characters: List<String>.from(json['characters'] ?? []),
     );
   }
 }

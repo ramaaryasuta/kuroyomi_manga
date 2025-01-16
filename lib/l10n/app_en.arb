@@ -9,5 +9,9 @@
     "changeLanguage": "Change Language", 
     "@changeLanguage": {
         "@description": "Change language"
+    },
+    "licensed": "Licensed Manga", 
+    "@licensed": {
+        "@description": "Licensed Manga"
     }
 }

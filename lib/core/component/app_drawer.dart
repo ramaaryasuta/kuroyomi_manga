@@ -29,6 +29,20 @@ class AppDrawer extends StatelessWidget {
               title: Text(AppLocalizations.of(context)!.home),
             ),
             ListTile(
+              onTap: () {
+                if (context.router.current.name == LicensedRoute.name) {
+                  Navigator.pop(context);
+                } else {
+                  context.router.pushAndPopUntil(const LicensedRoute(),
+                      predicate: (_) => false);
+                }
+              },
+              leading: const Icon(
+                Icons.check_circle_outlined,
+              ),
+              title: Text(AppLocalizations.of(context)!.licensed),
+            ),
+            ListTile(
               onTap: () => openLanguageDialog(context),
               leading: const Icon(
                 Icons.language,
