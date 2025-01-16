@@ -13,5 +13,15 @@
     "licensed": "Licensed Manga", 
     "@licensed": {
         "@description": "Licensed Manga"
-    }
+    }, 
+    "author": "Author",
+    "tags": "Tags",
+    "pages": "Pages",
+    "parody": "Parody",
+    "tier": "Tier", 
+    "character": "Character", 
+    "siteTags": "Site Tags", 
+    "read": "Read",
+    "alternative": "Alternative", 
+    "gacha": "Gacha"
 }

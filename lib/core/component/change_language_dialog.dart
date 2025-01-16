@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import '../cubits/locale_cubit.dart';
 
@@ -8,7 +9,7 @@ void openLanguageDialog(BuildContext context) {
     context: context,
     builder: (context) {
       return AlertDialog(
-        title: Text('Change Language'),
+        title: Text(AppLocalizations.of(context)!.changeLanguage),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [

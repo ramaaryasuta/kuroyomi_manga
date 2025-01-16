@@ -4,5 +4,15 @@
     "kuroyomiManga": "Kuroyomi Manga",
     "home": "Beranda", 
     "changeLanguage": "Ubah Bahasa", 
-    "licensed": "Manga Terlisensi"
+    "licensed": "Manga Terlisensi", 
+    "author": "Penulis",
+    "tags": "Tags",
+    "pages": "Halaman",
+    "parody": "Parody",
+    "tier": "Tier", 
+    "character": "Karakter", 
+    "siteTags": "Tags Situs", 
+    "read": "Baca", 
+    "alternative": "Alternative", 
+    "gacha": "Gacha"
 }

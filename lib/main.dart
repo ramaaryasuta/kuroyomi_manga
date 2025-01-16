@@ -7,6 +7,7 @@ import 'core/cubits/locale_cubit.dart';
 import 'core/router/app_router.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MultiBlocProvider(
     providers: blocProviders,
     child: MyApp(),

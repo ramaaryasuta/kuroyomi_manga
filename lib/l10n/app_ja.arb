@@ -4,5 +4,15 @@
     "kuroyomiManga": "くろよみ漫画",
     "home": "ホーム", 
     "changeLanguage": "言語変更", 
-    "licensed": "ライセンス漫画"
+    "licensed": "ライセンス漫画", 
+    "author": "作者",
+    "tags": "タグ",
+    "pages": "ページ",
+    "parody": "パラディオ", 
+    "tier": "レベル", 
+    "character": "キャラクター", 
+    "siteTags": "サイトタグ",
+    "read": "読む",
+    "alternative": "代替", 
+    "gacha": "ガチャ"
 }
